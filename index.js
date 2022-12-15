@@ -4,6 +4,9 @@ const app = express();
 app.get("/",(req,res)=>{
      res.send("Well come")
 })
+app.get("/home",(req,res)=>{
+     res.send("Well Home")
+})
 
 
 const port = 5000
