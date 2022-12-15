@@ -1,16 +1,11 @@
 const express = require("express");
 const app = express();
 
+app.use(express.static("./views"))
+app.set("view engine" , "ejs")
 app.get("/",(req,res)=>{
-     res.send("Well come")
+     res.render("register")
 })
-app.get("/home",(req,res)=>{
-     res.send("Well Home")
-})
-app.get("/about",(req,res)=>{
-     res.send("Well About")
-})
-
 
 const port = 5000
 app.listen(port,()=>{
