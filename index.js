@@ -7,6 +7,9 @@ app.get("/",(req,res)=>{
 app.get("/home",(req,res)=>{
      res.send("Well Home")
 })
+app.get("/about",(req,res)=>{
+     res.send("Well About")
+})
 
 
 const port = 5000
